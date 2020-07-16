@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US " }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Artículos de tet.">
+    <meta name="keywords" content="tech,tecnológia,geek">
+    <link rel="manifest" href="{{site.baseurl}}/manifest.json">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="{{site.baseurl}}/assets/images/Logotet.png">
+    <title>{{ page.title }} | {{ site.title }}</title>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color:#292b2b">
+        <a class="navbar-brand" href="https://somostet.github.io/">tu espacio tecnológico</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://somostet.github.io/quienessomos.html">¿Quiénes Somos?</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contenidos 
+                  </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://somostet.github.io/publicaciones.html">Publicaciones</a>
+                        <a class="dropdown-item active" href="https://somostet.github.io/articulos/">Artículos</a>
+                        <a class="dropdown-item" href="https://somostet.github.io/curiosidades.html">Curiosidades</a>
+                        <a class="dropdown-item" href="https://somostet.github.io/proyectos.html">Proyectos</a>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="text-right">
+                <!--Facebook-->
+                <a href="https://www.facebook.com/TuEspacioT/" target="_blank" rel="noopener" class="fb-ic ml-0">
+                    <i class="fa fa-facebook text-white"> </i>
+                </a>
+                <!--Twitter-->
+                <a href="https://twitter.com/TuEspacioTecno" target="_blank" rel="noopener" class="tw-ic pl-2">
+                    <i class="fa fa-twitter text-white"> </i>
+                </a>
+                <!--Youtube-->
+                <a href="https://www.youtube.com/channel/UCMcEqIcV15N-KW6NOeepmvg?view_as=subscriber" target="_blank" rel="noopener" class="ytube-ic pl-2">
+                    <i class="fa fa-youtube text-white"> </i>
+                </a>
+                <!--Instagram-->
+                <a href="https://www.instagram.com/tet_507/" target="_blank" rel="noopener" class="ins-ic pl-2">
+                    <i class="fa fa-instagram text-white"> </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cuerpo -->
+    <img src="{{site.baseurl}}/assets/images/BannerArt.png" class="img-fluid">
+    <div class="wrapper">
+
+        <div class="container mb-5 mt-5 text-justify">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    {{ content }}
+                    <br><br><br>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <!-- Pie de página -->
+        <footer class="mt-5" style="background-color: #1a1a1a; ">
+            <!-- Copyright-->
+            <div class="footer-copyright py-3 text-white text-center pt-5">
+                © 2018 Copyright:
+                <a href="https://www.facebook.com/TuEspacioT/ " target="_blank" rel="noopener">
+                         tu espacio tecnológico
+                    </a>
+
+                <br>La tecnologia por fin tiene su espacio<br>
+                <!-- Redes Sociales -->
+                <div class="text-center mt-3">
+                    <!--Facebook-->
+                    <a href="https://www.facebook.com/TuEspacioT/" target="_blank" rel="noopener" class="fb-ic ml-0">
+                        <i class="fa fa-facebook text-white"> </i>
+                    </a>
+                    <!--Twitter-->
+                    <a href="https://twitter.com/TuEspacioTecno" target="_blank" rel="noopener" class="tw-ic pl-2">
+                        <i class="fa fa-twitter text-white"> </i>
+                    </a>
+                    <!--Youtube-->
+                    <a href="https://www.youtube.com/channel/UCMcEqIcV15N-KW6NOeepmvg?view_as=subscriber" target="_blank" rel="noopener" class="ytube-ic pl-2">
+                        <i class="fa fa-youtube text-white"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a href="https://www.instagram.com/tet_507/" target="_blank" rel="noopener" class="ins-ic pl-2">
+                        <i class="fa fa-instagram text-white"> </i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="{{ " /assets/js/scale.fix.js " | relative_url }}"></script>
+        {% if site.google_analytics %}
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            ga('create', '{{ site.google_analytics }}', 'auto');
+            ga('send', 'pageview');
+        </script>
+        {% endif %}
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

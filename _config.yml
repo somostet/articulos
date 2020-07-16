@@ -1,0 +1,12 @@
+theme: jekyll-theme-minimal
+logo: /assets/images/Logotet.png
+baseurl: /articulos
+paginate: 5
+author:
+    name: Héctor 
+
+defaults:
+  - scope:
+      path: "assets/images/"
+    values:
+      image: true
